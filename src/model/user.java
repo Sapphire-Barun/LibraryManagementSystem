@@ -3,13 +3,13 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class user {
+public class User {
     private String name;
     private String userId;
     private List<Book> borrowedBooks;
 
     //Constructor
-    public user(String name, String userId) {
+    public User(String name, String userId) {
         this.name = name;
         this.userId = userId;
         this.borrowedBooks = new ArrayList<>();
@@ -30,12 +30,12 @@ public class user {
 
     //Borrow a book
     public void borrowBook(Book book) {
-        borrrowedBooks.add(book);
+        borrowedBooks.add(book);
     }
 
     //Return a book
-    public void borrowBook(Book book) {
-        borrrowedBooks.remove(book);
+    public void returnBook(Book book) {
+        borrowedBooks.remove(book);
     }
 
     //Display user info

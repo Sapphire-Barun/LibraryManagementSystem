@@ -1,13 +1,13 @@
 package model;
 
-public class book {
+public class Book {
     private String title;
     private String author;
     private String isbn;
     private boolean isAvailable;
 
     //Constructor
-    public book(String title, String author, String isbn) {
+    public Book(String title, String author, String isbn) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
